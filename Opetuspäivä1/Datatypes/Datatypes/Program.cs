@@ -145,9 +145,6 @@ namespace Datatypes
             // Pyydä käyttäjältä 4 eri arvoa ja suorita lasku.
             #endregion
 
-
-
-
         }
     }
 }
