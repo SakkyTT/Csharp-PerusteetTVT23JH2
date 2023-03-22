@@ -17,14 +17,13 @@ namespace Datatypes
             // Data on keskeinen osa ohjelmien toimintaa. Kaikki sovellukset koostuu seuraavista perus datatyypeistä:
 
             // 1. Kokonaisluvut - Integer - int
-            // 2. Desimaaluvut - Floating point number. Kolme eri koko luokkaa, double yleisin.
+            // 2. Desimaaliluvut - Floating point number. Kolme eri koko luokkaa, double yleisin.
             //      - float, 4 tavua / 32 bittiä
             //      - double, 8 tavua / 64 bittiä
             //      - decimal, 16 tavua / 128 bittiä. Enemmän bittejä on tarkempi, mutta hitaampi suorittaa.
             // 3. Merkki - Character - char
             // 4. Merkkijono - string
             // 5. Totuusarvomuuttuja - boolean
-            // 6. Ei mitään - null
 
             // Esimerkkejä arvoista:
 
@@ -33,7 +32,6 @@ namespace Datatypes
             // char: 'r' / '%' / '7' / '"' - Ilmaisee yhden merkin, heittomerkkien välissä.
             // string: "Hello" / "Number 7" / "gTsB6"!n(?#v" - Ilmaisee sarjan merkkejä yhtenä kokonaisuutena. String arvo on lainausmerkkien välissä.
             // bool: true / false - Ilmaisee onko jokin asia tai ei. Käytetään usein ilmaisemaan jokin vertailun lopputulos.
-            // null: null     - Ilmaisee, että arvo puuttuu (vain referenssi datatyypit). Esimerkiksi string voi olla null.
 
             // Termi: Literaalit - Literals
             // Tämä termi viittaa datan konkreettiseen arvoon. Yllä olevia arvoja voidaan ilmaista termeillä: string literal "moi" tai int literal 7.
