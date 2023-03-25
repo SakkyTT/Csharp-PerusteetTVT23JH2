@@ -1,7 +1,0 @@
-D:\githubRepos\Csharp-PerusteetTVT23JH2\delete\delete\bin\Debug\delete.exe.config
-D:\githubRepos\Csharp-PerusteetTVT23JH2\delete\delete\bin\Debug\delete.exe
-D:\githubRepos\Csharp-PerusteetTVT23JH2\delete\delete\bin\Debug\delete.pdb
-D:\githubRepos\Csharp-PerusteetTVT23JH2\delete\delete\obj\Debug\delete.csproj.AssemblyReference.cache
-D:\githubRepos\Csharp-PerusteetTVT23JH2\delete\delete\obj\Debug\delete.csproj.CoreCompileInputs.cache
-D:\githubRepos\Csharp-PerusteetTVT23JH2\delete\delete\obj\Debug\delete.exe
-D:\githubRepos\Csharp-PerusteetTVT23JH2\delete\delete\obj\Debug\delete.pdb
