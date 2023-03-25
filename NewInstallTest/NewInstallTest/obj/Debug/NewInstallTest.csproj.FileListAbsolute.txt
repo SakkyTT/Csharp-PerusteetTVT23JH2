@@ -1,0 +1,7 @@
+C:\Users\TEEMUTU\OneDrive - Savon koulutuskuntayhtymä\Tiedostot\GitHubRepos\Csharp-PerusteetTVT23JH2\NewInstallTest\NewInstallTest\bin\Debug\NewInstallTest.exe.config
+C:\Users\TEEMUTU\OneDrive - Savon koulutuskuntayhtymä\Tiedostot\GitHubRepos\Csharp-PerusteetTVT23JH2\NewInstallTest\NewInstallTest\bin\Debug\NewInstallTest.exe
+C:\Users\TEEMUTU\OneDrive - Savon koulutuskuntayhtymä\Tiedostot\GitHubRepos\Csharp-PerusteetTVT23JH2\NewInstallTest\NewInstallTest\bin\Debug\NewInstallTest.pdb
+C:\Users\TEEMUTU\OneDrive - Savon koulutuskuntayhtymä\Tiedostot\GitHubRepos\Csharp-PerusteetTVT23JH2\NewInstallTest\NewInstallTest\obj\Debug\NewInstallTest.csproj.AssemblyReference.cache
+C:\Users\TEEMUTU\OneDrive - Savon koulutuskuntayhtymä\Tiedostot\GitHubRepos\Csharp-PerusteetTVT23JH2\NewInstallTest\NewInstallTest\obj\Debug\NewInstallTest.csproj.CoreCompileInputs.cache
+C:\Users\TEEMUTU\OneDrive - Savon koulutuskuntayhtymä\Tiedostot\GitHubRepos\Csharp-PerusteetTVT23JH2\NewInstallTest\NewInstallTest\obj\Debug\NewInstallTest.exe
+C:\Users\TEEMUTU\OneDrive - Savon koulutuskuntayhtymä\Tiedostot\GitHubRepos\Csharp-PerusteetTVT23JH2\NewInstallTest\NewInstallTest\obj\Debug\NewInstallTest.pdb
