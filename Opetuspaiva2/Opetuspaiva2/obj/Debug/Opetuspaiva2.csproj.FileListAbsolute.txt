@@ -1,0 +1,7 @@
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspaiva2\Opetuspaiva2\bin\Debug\Opetuspaiva2.exe.config
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspaiva2\Opetuspaiva2\bin\Debug\Opetuspaiva2.exe
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspaiva2\Opetuspaiva2\bin\Debug\Opetuspaiva2.pdb
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspaiva2\Opetuspaiva2\obj\Debug\Opetuspaiva2.csprojAssemblyReference.cache
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspaiva2\Opetuspaiva2\obj\Debug\Opetuspaiva2.csproj.CoreCompileInputs.cache
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspaiva2\Opetuspaiva2\obj\Debug\Opetuspaiva2.exe
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspaiva2\Opetuspaiva2\obj\Debug\Opetuspaiva2.pdb
