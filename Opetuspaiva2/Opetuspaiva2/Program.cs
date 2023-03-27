@@ -129,12 +129,14 @@ namespace Opetuspaiva2
             //  - TE-opiskelijat, maksaa itse
             // Opintotoimisto -infot
 
+            // Aiheista vielä Moodle viestit
 
 
 
 
 
-            // Koodin lopussa
+
+            // Koodin lopussa, jota sovellus ei sammu automaattisesti
             Console.ReadKey();
         }
     }
