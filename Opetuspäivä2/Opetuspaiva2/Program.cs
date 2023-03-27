@@ -56,6 +56,7 @@ namespace Opetuspaiva2
 
 
             // 4 C# Perus: Palkan lasku (yhdessä 27.3.)
+            // https://moodle.sakky.fi/mod/assign/view.php?id=1159587
             Console.WriteLine(); // Tyhjä rivi, erotellaan edelliset koodit
 
             // Muuttujat
@@ -103,6 +104,7 @@ namespace Opetuspaiva2
             Console.WriteLine($"Kuukausi palkka on {totalSalary}");
 
             // 5 C# Perus: Keskiarvo (yhdessä 27.3.)
+            // https://moodle.sakky.fi/mod/assign/view.php?id=1159588
             Console.WriteLine(); // Tyhjä rivi
 
             Console.Write("Anna luku 1: ");
@@ -118,6 +120,7 @@ namespace Opetuspaiva2
             Console.WriteLine($"Keskiarvo: {result}");
 
             // 6 C# Perus: Kolmion pinta-ala(yhdessä 27.3.)
+            // https://moodle.sakky.fi/mod/assign/view.php?id=1159590
             Console.WriteLine(); // Tyhjä rivi
 
             // Viimeinen harjoitus
