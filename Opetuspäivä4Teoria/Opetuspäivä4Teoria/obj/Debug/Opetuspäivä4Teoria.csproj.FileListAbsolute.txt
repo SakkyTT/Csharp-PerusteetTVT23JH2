@@ -5,3 +5,10 @@ D:\githubRepos\Csharp-PerusteetTVT23JH2\Opetuspäivä4Teoria\Opetuspäivä4Teori
 D:\githubRepos\Csharp-PerusteetTVT23JH2\Opetuspäivä4Teoria\Opetuspäivä4Teoria\obj\Debug\Opetuspäivä4Teoria.csproj.CoreCompileInputs.cache
 D:\githubRepos\Csharp-PerusteetTVT23JH2\Opetuspäivä4Teoria\Opetuspäivä4Teoria\obj\Debug\Opetuspäivä4Teoria.exe
 D:\githubRepos\Csharp-PerusteetTVT23JH2\Opetuspäivä4Teoria\Opetuspäivä4Teoria\obj\Debug\Opetuspäivä4Teoria.pdb
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspäivä4Teoria\Opetuspäivä4Teoria\bin\Debug\Opetuspäivä4Teoria.exe.config
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspäivä4Teoria\Opetuspäivä4Teoria\bin\Debug\Opetuspäivä4Teoria.exe
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspäivä4Teoria\Opetuspäivä4Teoria\bin\Debug\Opetuspäivä4Teoria.pdb
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspäivä4Teoria\Opetuspäivä4Teoria\obj\Debug\Opetuspäivä4Teoria.csproj.AssemblyReference.cache
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspäivä4Teoria\Opetuspäivä4Teoria\obj\Debug\Opetuspäivä4Teoria.csproj.CoreCompileInputs.cache
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspäivä4Teoria\Opetuspäivä4Teoria\obj\Debug\Opetuspäivä4Teoria.exe
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspäivä4Teoria\Opetuspäivä4Teoria\obj\Debug\Opetuspäivä4Teoria.pdb

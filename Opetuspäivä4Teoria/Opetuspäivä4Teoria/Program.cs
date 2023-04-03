@@ -46,7 +46,7 @@ namespace Opetuspäivä4Teoria
             //{
             //    Console.WriteLine("Aukioloaika: 10:00 - 20:00");
             //}
-            //else
+            //else // suoritetaan, jos ei suoritettu muuta koodi osiota
             //{ // Oletuksena on lopuksi arkipäivä ja normaali aukioloaika
             //    Console.WriteLine("Aukioloaika: 7:00 - 21:00");
             //}
@@ -59,8 +59,9 @@ namespace Opetuspäivä4Teoria
             //switch (currentDayOfWeekSWITCH) // Muuttuja, jota verrataan
             //{
             //    case DayOfWeek.Saturday: // Arvo, johon muuttujaa verrataan. Onko nyt lauantai.
-            //        Console.WriteLine("Aukioloaika: 10:00 - 21:00");
-            //        break;
+            //        Console.WriteLine("Aukioloaika: 10:00 - 21:00"); // Suoritetaan haluttu koodi
+            //        // Voi olla useampi rivi
+            //        break; // Lopettaa switch blokin suorittamisen
             //    case DayOfWeek.Sunday: // Verrataan onko nyt sunnuntai
             //        Console.WriteLine("Aukioloaika: 10:00 - 20:00");
             //        break;
@@ -78,13 +79,13 @@ namespace Opetuspäivä4Teoria
             // Syntaksi: (condition) ? (value if true) : (value if false)
 
             // Haetaan tämän hetken viikonpäivä
-            //DayOfWeek currentDayOfWeekTERNARY = DateTime.Now.DayOfWeek;
+            DayOfWeek currentDayOfWeekTERNARY = DateTime.Now.DayOfWeek;
 
-            //string message = currentDayOfWeekTERNARY == DayOfWeek.Saturday ? "Aukioloaika: 10:00 - 21:00" : // Arvo, jos launtai
-            //                 currentDayOfWeekTERNARY == DayOfWeek.Sunday ? "Aukioloaika: 10:00 - 20:00" : // Arvo, jos sunnuntai
-            //                 "Aukioloaika: 7:00 - 21:00"; // Oletusarvo
+            string message = currentDayOfWeekTERNARY == DayOfWeek.Saturday ? "Aukioloaika: 10:00 - 21:00" : // Arvo, jos launtai
+                             currentDayOfWeekTERNARY == DayOfWeek.Sunday ? "Aukioloaika: 10:00 - 20:00" : // Arvo, jos sunnuntai
+                             "Aukioloaika: 7:00 - 21:00"; // Oletusarvo
 
-            //Console.WriteLine(message); // Koska ternary operaatio ainoastaan määrittää arvon muuttujalle. WriteLine suoritetaan erikseen.
+            Console.WriteLine(message); // Koska ternary operaatio ainoastaan määrittää arvon muuttujalle. WriteLine suoritetaan erikseen.
 
             #endregion
 
@@ -112,10 +113,7 @@ namespace Opetuspäivä4Teoria
             //sumNoLoop += int.Parse(Console.ReadLine());
             //sumNoLoop += int.Parse(Console.ReadLine());
             //sumNoLoop += int.Parse(Console.ReadLine());
-            //sumNoLoop += int.Parse(Console.ReadLine());
-            //sumNoLoop += int.Parse(Console.ReadLine());
-            //sumNoLoop += int.Parse(Console.ReadLine());
-            //sumNoLoop += int.Parse(Console.ReadLine());
+
 
             //Console.WriteLine($"Summa: {sumNoLoop}");
             // Ilman silmukkaa, pyydettävien numeroiden määrä täytyy olla ennalta määritelty koodissa
@@ -126,7 +124,9 @@ namespace Opetuspäivä4Teoria
             //int sumWhileLoop = 0;
             //bool continueLoop = true; // Muuttuja, jota käytetään while silmukan ehtona. Kun käyttäjä syöttää merkin 'e', annetaan muuttujan arvoksi false ja silmukka päättyy.
             //string input = "";
+
             //Console.WriteLine("Anna summattavia lukuja: (e päättää lukujen summauksen)");
+
             //while (continueLoop)
             //{
             //    input = Console.ReadLine();
@@ -139,13 +139,16 @@ namespace Opetuspäivä4Teoria
             //        sumWhileLoop += int.Parse(input);
             //    }
             //}
+
             //Console.WriteLine($"Summa: {sumWhileLoop}");
 
-            // do-while on muuten sama kuin while, mutta koodi aina suoritetaan yhden kerran. Ehto tarkistetaan vasta lopussa.
+            // do-while on muuten sama kuin while, mutta koodi aina suoritetaan vähintään yhden kerran. Ehto tarkistetaan vasta lopussa.
 
             // -- Esimerkki do-while silmukalla --
 
-            //continueLoop = true;
+            //int sumWhileLoop = 0;
+            //bool continueLoop = true; // Muuttuja, jota käytetään while silmukan ehtona. Kun käyttäjä syöttää merkin 'e', annetaan muuttujan arvoksi false ja silmukka päättyy.
+            //string input = "";
 
             //Console.WriteLine("Anna summattavia lukuja: (e päättää lukujen summauksen)");
             //do // Koodi suoritetaan kerran, ilman ehdon tarkistusta.
@@ -160,6 +163,7 @@ namespace Opetuspäivä4Teoria
             //        sumWhileLoop += int.Parse(input);
             //    }
             //} while (continueLoop); // Ehto tarkistetaan lopuksi.
+
             //Console.WriteLine($"Summa: {sumWhileLoop}");
 
             //
@@ -168,29 +172,37 @@ namespace Opetuspäivä4Teoria
             // Käytetään tilanteissa, kun toistojen määrä on ennalta määritelty.
             // Syntaksi:
 
-            // initialization == luodaan muuttuja, jota iteroidaan silmukassa
+            // initialization == luodaan int muuttuja, jota iteroidaan silmukassa
             // condition == silmukan ehto
             // iteration == kuinka muuttujaa iteroidaan
+
             // for (initialization; condition; iteration)
             // {
-                    // code block to be executed
+            //      code block to be executed
             // }
 
             // Esim: Pyydetään käyttäjältä 3 lukua ja lasketaan niiden keskiarvo.
 
             //const int numberOfValues = 3; // Number of values asked from user.
-            //double sum = 0;
+            //// const muuttujaa ei voi muokata
+            //// numberOfValues = 4; // Tässä tulee virhe
+            //double sum = 0d;
+
             //Console.WriteLine("Anna 3 lukua: ");
+
             //for (int i = 1; i <= numberOfValues; i++)
             //{
             //    sum += int.Parse(Console.ReadLine());
             //}
-            //Console.WriteLine($"Keskiarvo on: {sum/ numberOfValues}");
+
+            //Console.WriteLine($"Keskiarvo on: {sum / numberOfValues}");
 
 
             // 3. foreach
             // Käytetään tilanteissa, kun käydään läpi kaikki kohteet jossakin kokoelmassa.
             // Usein kokoelmat ovat esim: taulukko (array) tai lista (list)
+
+            // int[] numbers = [6, 4, 3, 7, 3]
 
             // Syntaksi:
             // foreach (type variable in collection)
@@ -200,12 +212,12 @@ namespace Opetuspäivä4Teoria
 
             // Esim: Käydään läpi kaikki merkit (char) string muuttujassa.
 
-            //string word = "Bird";
+            string word = "Bird";
 
-            //foreach (char c in word)
-            //{
-            //    Console.WriteLine(c);
-            //}
+            foreach (char cccccccc in word)
+            {
+                Console.WriteLine(cccccccc);
+            }
 
             #endregion
 
@@ -233,8 +245,8 @@ namespace Opetuspäivä4Teoria
             // Loogiset operaattorit
             // Voidaan yhdistää usempi vertailuoperaattori tai totuusarvo.
             #region
-            // x > y && x >= 0   JA-operaattori  x on isompi kuin y JA x ei ole negatiivinen luku
-            // x == y || x%2 == 0   TAI-operaattori  x on yhtä suuri kuin y TAI x on jaollinen kahdella
+            // JA-operaattori && => x > y && x >= 0        x on isompi kuin y JA x ei ole negatiivinen luku
+            // TAI-operaattori || => x == y || x%2 == 0     x on yhtä suuri kuin y TAI x on jaollinen kahdella
             // ! kääntää totuusarvon. Esim: !true on false
 
             #endregion
@@ -245,6 +257,7 @@ namespace Opetuspäivä4Teoria
             // Suurennetaan tai pienennetää arvoa yhdellä
             // Useissa tilanteissa on tarvetta käydä läpi lukuja yksi kerrallaan. Esim: taulukon indeksit.
             #region
+
             // int i = 5;
             // i++; i on tämän rivin jälkeen 6
             // ++i; i on tällä rivillä 6
@@ -252,6 +265,7 @@ namespace Opetuspäivä4Teoria
             // int j = 5;
             // j--; j on tämän rivin jälkeen 4
             // --j; j on tällä rivillä 4
+
             int ii = 5;
             int j = 10;
             Console.WriteLine(ii++);
