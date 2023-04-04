@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DC92B737-FDEC-4A58-A65B-2522E57582CA}</ProjectGuid>
+    <ProjectGuid>{4B1A48A7-291B-4E95-BE01-87BDA6564879}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>NewInstallTest</RootNamespace>
-    <AssemblyName>NewInstallTest</AssemblyName>
+    <RootNamespace>Opetuspäivä5Harjoitukset</RootNamespace>
+    <AssemblyName>Opetuspäivä5Harjoitukset</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
