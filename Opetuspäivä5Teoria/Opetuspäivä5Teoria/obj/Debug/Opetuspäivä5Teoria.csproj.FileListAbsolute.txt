@@ -1,0 +1,7 @@
+D:\githubRepos\Csharp-PerusteetTVT23JH2\Opetuspäivä5Teoria\Opetuspäivä5Teoria\bin\Debug\Opetuspäivä5Teoria.exe.config
+D:\githubRepos\Csharp-PerusteetTVT23JH2\Opetuspäivä5Teoria\Opetuspäivä5Teoria\bin\Debug\Opetuspäivä5Teoria.exe
+D:\githubRepos\Csharp-PerusteetTVT23JH2\Opetuspäivä5Teoria\Opetuspäivä5Teoria\bin\Debug\Opetuspäivä5Teoria.pdb
+D:\githubRepos\Csharp-PerusteetTVT23JH2\Opetuspäivä5Teoria\Opetuspäivä5Teoria\obj\Debug\Opetuspäivä5Teoria.csproj.AssemblyReference.cache
+D:\githubRepos\Csharp-PerusteetTVT23JH2\Opetuspäivä5Teoria\Opetuspäivä5Teoria\obj\Debug\Opetuspäivä5Teoria.csproj.CoreCompileInputs.cache
+D:\githubRepos\Csharp-PerusteetTVT23JH2\Opetuspäivä5Teoria\Opetuspäivä5Teoria\obj\Debug\Opetuspäivä5Teoria.exe
+D:\githubRepos\Csharp-PerusteetTVT23JH2\Opetuspäivä5Teoria\Opetuspäivä5Teoria\obj\Debug\Opetuspäivä5Teoria.pdb
