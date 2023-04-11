@@ -1,0 +1,7 @@
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Päivän6Harjoitukset\Päivän6Harjoitukset\bin\Debug\Päivän6Harjoitukset.exe.config
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Päivän6Harjoitukset\Päivän6Harjoitukset\bin\Debug\Päivän6Harjoitukset.exe
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Päivän6Harjoitukset\Päivän6Harjoitukset\bin\Debug\Päivän6Harjoitukset.pdb
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Päivän6Harjoitukset\Päivän6Harjoitukset\obj\Debug\Päivän6Harjoitukset.csproj.AssemblyReference.cache
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Päivän6Harjoitukset\Päivän6Harjoitukset\obj\Debug\Päivän6Harjoitukset.csproj.CoreCompileInputs.cache
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Päivän6Harjoitukset\Päivän6Harjoitukset\obj\Debug\Päivän6Harjoitukset.exe
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Päivän6Harjoitukset\Päivän6Harjoitukset\obj\Debug\Päivän6Harjoitukset.pdb

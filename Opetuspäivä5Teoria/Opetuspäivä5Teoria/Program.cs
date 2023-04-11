@@ -14,12 +14,17 @@ namespace Opetuspäivä5Teoria
 
             // 1. Merkkijono
             // string - immutable == arvoa ei pysty muokkaamaan muistissa
+            // string text1 = "123"; 
+            // text1 = text1 + "test";  <= Varataan uusi lohko RAM muistista
             #region
 
             // Merkkijonoa voi ajatella kokoelmana yksittäisiä merkkejä. "monitor" => ['m', 'o', 'n', 'i', 't', 'o', 'r']
 
+            // Uudet termit: Method ja Property
             // Yleisiä string datatyypin metodeja:
-            //  - Length: palauttaa merkkijonon pituuden. Esim: "word".Length == 4
+            //  - Length: (property) palauttaa merkkijonon pituuden. Esim: "word".Length == 4
+
+            // UUSI TERMI: indeksi / index - järjestysluku, alkaa arvosta 0
             //  - IndexOf: palauttaa merkin tai merkkijonon sijainnin merkkijonossa. Esim: "Tuesday".IndexOf("e") == 2 tai "wednesday".IndexOf("day") == 6
             //  - ToUpper ja ToLower: luo uuden string arvon, jossa kirjaimet ovat joko isoilla tai pienillä. Esim: "Cat".ToLower() == "cat".ToUpper() == "CAT"
             //  - Substring: palauttaa osan merkkijonosta. Esim: "Potato".Substring(2) == "tato" tai "Potato".Substring(2, 2) == "ta"
@@ -28,16 +33,19 @@ namespace Opetuspäivä5Teoria
 
             // string muuttujaa voidaan käsitellä silmukassa samalla tavalla kuin taulukoita.
 
-            //string text = "Hello";
-            //for (int i = 0; i < text.Length; i++)
-            //{
-            //    Console.WriteLine(text[i]); 
-            //}
+            string text = "Hello";
+
+            // Aloitetaan arvosta 0, koska indeksit alkavat nollasta
+            for (int i = 0; i < text.Length; i++)
+            {
+                // Tiettyyn indeksiin päästään käsiksi hakasuluilla, joiden sisällä on indeksin arvo
+                Console.WriteLine(text[i]);
+            }
 
 
             // Huomioitavaa, että string on immutable datatyyppi. Kun string muuttujan arvoa muokataan, se korvataan muistissa uudella arvolla.
             // Eli alkuperäistä arvoa ei muokata, vaan luodaan uusi muokattu kopio.
-            // Tämän vuoksi jossakin tilanteissa kun muokataan toistuvasti string muuttujaa, suorituskyvyn vuoksi käytetään StringBuilder datatyyppiä sen sijaan.
+            // Tämän vuoksi jossakin tilanteissa kun muokataan toistuvasti string muuttujaa, suorituskyvyn vuoksi käytetään StringBuilder luokkaa sen sijaan.
             // StringBuilder on mutable datatyyppi, jolloin editoitaan muistissa olevaan dataa suoraan.
 
             // Esim: Tämä koodi lisää string muuttujaan text arvon i, miljoona kertaa. Tämä koodi luo miljoona uutta string muuttujaa muistiin.
