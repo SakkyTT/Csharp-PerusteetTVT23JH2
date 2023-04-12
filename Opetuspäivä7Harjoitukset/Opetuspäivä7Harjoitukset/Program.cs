@@ -44,6 +44,32 @@ namespace Opetuspäivä7Harjoitukset
 
             Console.WriteLine($"Lukujen summa on: {sum}");
 
+
+            // Lista versio
+            // Tässä versiossa käyttäjä voi tallentaa niin monta lukua kuin haluaa.
+
+            Console.WriteLine("Syötä lukuja (e to exit): ");
+            List<int> values = new List<int>();
+            bool userIsDone = false;
+
+            // Silmukka, jossa käyttäjä voi syöttää haluamansa verran lukuja.
+            while (userIsDone == false) // tai do while
+            {
+                string userInput = Console.ReadLine();
+
+                if (userInput == "e") // Tarkistetaan, jos käyttäjä lopettaa lukujen syötön
+                {
+                    userIsDone = true;
+                }
+                else // Muuten lisätään luku listaan.
+                {
+                    values.Add(int.Parse(userInput));
+                }
+            }
+
+            // Tauko, jatketaan 18:00
+
+
             #endregion
 
 
