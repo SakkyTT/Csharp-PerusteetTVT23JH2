@@ -89,21 +89,24 @@ namespace Opetuspäivä7Harjoitukset
             #region
 
             Console.Write("Syötä sana 1: ");
-            string word1 = Console.ReadLine(); // "kuppi"
+            string word1 = Console.ReadLine(); // Esim: "kuppi"
 
             Console.Write("Syötä sana 2: ");
-            string word2 = Console.ReadLine(); // "kauppa"
+            string word2 = Console.ReadLine(); // Esim: "kauppa"
 
             // Taulukon käytön ongelmat:
             // 1. Ei voi tietää kuinka pitkä sana on
             // 2. Ei voi tietää montako merkkiä ovat samoja
 
+            // Toistaiseksi luodaan taulukko, jonka pituus on sama kuin word1 pituus.
+            // Se aiheuttaa sen, että taulukosta tulee liian pitkä
             // TODO: Luo taulukkon pituus tarkalleen oikein.
 
-            //charsInCommon sisältää merkit, jotka ilmenevät molemmissa sanoissa ja montako kertaa ne ilmenee
+            // charsTested sisältää merkit, jotka ilmenevät molemmissa sanoissa ja montako kertaa ne ilmenee
             // Tässä datatyyppi on "Tuple" johon voi tallentaa kaksi eri datatyyppiä yhdessä
             (char charValue, int intValue)[] charsInCommon = new (char, int)[word1.Length];
 
+            // Tähän otetaan talteen word1 muuttujassa tarkistetut merkit
             string charsTested = "";
 
             // Luodaan silmukka, joka käy läpi kaikki word1 merkit ja tarkistetaan ilmeneekö se word2-muuttujassa
@@ -114,42 +117,26 @@ namespace Opetuspäivä7Harjoitukset
                 for (int j = 0; j < word2.Length; j++) // word2 indeksi == j
                 {
                     // Onko sanan 1 indeksissä i sama kirjain kuin sanan 2 indeksissä j
-                    // Ja ei ole vielä tallennettu kirjainta taulukkoon
-                    if (word1[i] == word2[j] && charsTested.Contains(word1[i]) == false) 
+                    // Ja tarkistetaan, että ei ole vielä tallennettu kirjainta taulukkoon => estää saman kirjaimen tallennuksen uudestaan
+                    if (word1[i] == word2[j] && charsTested.Contains(word1[i]) == false)
                     {
-                        // Estetään saman kirjaimen tallennus uudestaan
-
                         numberOftimesFound++;
                         charsInCommon[i] = (word1[i], numberOftimesFound);
                     }
                 }
-                // Lisätään löydetty merkki, vasta sisemmän silmukan jälkeen.
 
+                // Lisätään tutkittu merkki, vasta sisemmän silmukan jälkeen.
                 charsTested += word1[i];
             }
 
             // Silmukka, jossa käydään läpi taulukko löydetyistä kirjaimista
-            foreach( (char, int) pair in charsInCommon)
+            foreach ((char, int) pair in charsInCommon)
             {
                 Console.WriteLine($"Merkki {pair.Item1} löytyi {pair.Item2} kerran/kertaa");
             }
 
-            #endregion
-
-
-
-            #region
-
 
             #endregion
-
-
-
-            #region
-
-
-            #endregion
-
 
 
 
