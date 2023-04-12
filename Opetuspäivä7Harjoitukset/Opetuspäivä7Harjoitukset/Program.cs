@@ -15,34 +15,34 @@ namespace Opetuspäivä7Harjoitukset
             // https://moodle.sakky.fi/mod/assign/view.php?id=1164163
             #region
 
-            int[] userValues = new int[3];
+            //int[] userValues = new int[3];
 
-            // Silmukka, jossa pyydetään 3 arvoa. 1 per kierros.
-            // Silmukan ehto on se, että päätetään suoritus silloin,
-            // kun i-muuttujan arvo on taulukon indeksien ulkopuolelle.
-            // Jos pituus on 3, indeksi ovat 0 1 2
+            //// Silmukka, jossa pyydetään 3 arvoa. 1 per kierros.
+            //// Silmukan ehto on se, että päätetään suoritus silloin,
+            //// kun i-muuttujan arvo on taulukon indeksien ulkopuolelle.
+            //// Jos pituus on 3, indeksi ovat 0 1 2
 
-            Console.WriteLine("Syötä 3 lukua: ");
+            //Console.WriteLine("Syötä 3 lukua: ");
 
-            for (int i = 0; i < userValues.Length; i++)
-            {
-                userValues[i] = int.Parse(Console.ReadLine());
-            }
+            //for (int i = 0; i < userValues.Length; i++)
+            //{
+            //    userValues[i] = int.Parse(Console.ReadLine());
+            //}
 
-            // Myöhemmin tarvitaan summa
+            //// Myöhemmin tarvitaan summa
 
-            Console.WriteLine($"Lukujen summa on: {userValues.Sum()}");
+            //Console.WriteLine($"Lukujen summa on: {userValues.Sum()}");
 
-            int sum = 0;
+            //int sum = 0;
 
-            // Silmukka, jossa summataan kaikkien indeksien arvot.
-            // Voi olla myös foreach
-            for (int i = 0; i < userValues.Length; i++)
-            {
-                sum = sum + userValues[i];
-            }
+            //// Silmukka, jossa summataan kaikkien indeksien arvot.
+            //// Voi olla myös foreach
+            //for (int i = 0; i < userValues.Length; i++)
+            //{
+            //    sum = sum + userValues[i];
+            //}
 
-            Console.WriteLine($"Lukujen summa on: {sum}");
+            //Console.WriteLine($"Lukujen summa on: {sum}");
 
 
             // Lista versio
@@ -67,8 +67,17 @@ namespace Opetuspäivä7Harjoitukset
                 }
             }
 
-            // Tauko, jatketaan 18:00
+            // Listan summaus
+            Console.WriteLine($"Listan lukujen summa on: {values.Sum()}");
 
+            int sumList = 0;
+
+            foreach (int number in values)
+            {
+                sumList += number;
+            }
+
+            Console.WriteLine($"Listan lukujen summa on: {sumList}");
 
             #endregion
 
