@@ -69,14 +69,15 @@ namespace Opetuspäivä5Teoria
             // Taulukoiden syntaksi:
 
             int[] myArrayA; // luodaan int taulukko
-            int[] myArrayB = new int[5];
-            int[] myArrayC = { 1, 2, 3, 4, 5 };
+            int[] myArrayB = new int[5]; // Luodaan taulukko, johon voi tallentaa 5 int32 arvoa.
+            int[] myArrayC = { 1, 2, 3, 4, 5 }; // Tallennetaan suoraan arvot 1, 2, 3, 4, 5
+
+            // UUSI TERMI: element == tietty kohde kokoelmaa
             int firstElement = myArrayC[0];
 
-            int length = myArrayC.Length; // 
+            int length = myArrayC.Length; // Property, jossa tallessa taulukon elementtien lukumäärä
             Array.Sort(myArrayC);  // Järjestää arvot pienimmästä suurimpaan
             Array.Reverse(myArrayC); // Kääntää arvot lopusta alkuun
-
 
 
             // Ei taulukkoa vs taulukko
@@ -99,7 +100,7 @@ namespace Opetuspäivä5Teoria
 
             Console.WriteLine("Syötä 3 lukua: ");
 
-            for (int i = 0; i < nums.Length; i++)
+            for (int i = 0; i < 99; i++)
             {
                 nums[i] = int.Parse(Console.ReadLine());
             }
@@ -166,6 +167,7 @@ namespace Opetuspäivä5Teoria
 
             #endregion
 
+
             // 3. Lista
             // List - mutable
             #region
@@ -174,6 +176,7 @@ namespace Opetuspäivä5Teoria
             // Lista on hieman hitaampi ja vie enemmän muistia. Mutta sillä on merkitystä vasta kun käsitellään suurta määrää dataa ja sovelluksella on suorituskyky vaatimuksia.
 
             // Listan luonti
+
 
             List<int> myListA; // Luodaan muuttuja listaa varten, mutta siihen ei ole vielä tallennettu listaa.
             List<int> myListB = new List<int>(); // Luodaan lista muuttuja siihen tallennetaan tyhjä lista objecti.
@@ -184,6 +187,7 @@ namespace Opetuspäivä5Teoria
             // Listan metodeja == objektin toiminnallisuutta
 
             int count = myListC.Count; // Poikkeus: tämä on property, jossa on tallessa listan elementtien lukumäärä.
+            
             myListC.Add(6); // Lisätään listan loppuun uusi arvo 6
             myListC.Insert(0, 9); // Lisätään listan indeksiin tietty arvo. Tässä tallennetaan indeksiin 0, arvo 9
             myListC.Remove(3); // Poistetaan listasta ensimmäinen esiintymä arvosta 3
