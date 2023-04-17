@@ -25,8 +25,15 @@ namespace Opetuspäivä8Harjoitukset
             // Luodaan taulukon pituudeksi sama, kuin sanan pituus, silloin ainakin riittää tila
 
             // datatyyppi [] taulukonNimi = new datatyyppi[taulukon pituus];
-            char[] vocalsInWord = new char[userInput.Length];
+            char[] vocalsInWord = new char[userInput.Length]; // Taulukko
 
+            // List<datatyyppi> nimi = new List<datatyyppi>();
+            List<char> vocalsUsingList = new List<char>(); // Lista
+            // Lista on oletuksena tyhjä ja sen pituus/Count on 0
+            // vocalsUsingList[0] = 'n'; // Kaatuu, ArgumentOutOfRangeException, koska lista on tyhjä
+            // Sen elementtejä ei voida vielä käyttää
+
+            
 
             // 3.Käy sanan merkit läpi silmukassa
 
@@ -54,13 +61,14 @@ namespace Opetuspäivä8Harjoitukset
                      || userInput[i] == 'ä' || userInput[i] == 'ö')
                 {
                     vocalsInWord[i] = userInput[i];
+                    vocalsUsingList.Add(userInput[i]); // Listaan lisätään elementti .Add()-metodilla
                 }
             }
 
             // 5.Luo silmukka, jossa tulostetaan vokaalit taulukosta käyttäjälle.
 
             // for olisi toinen vaihtoehto
-            foreach (char symbol in vocalsInWord)
+            foreach (char symbol in vocalsInWord) // Taulukko
             {
                 // Ei tulosteta tyhjiä elementtejä
                 // char taulukon oletusarvo on 0, jos symbol on muutakuin 0 (symbol != 0)
@@ -71,6 +79,11 @@ namespace Opetuspäivä8Harjoitukset
                 }
             }
 
+            // Myös foreach toimisi
+            for (int i = 0; i < vocalsUsingList.Count; i++) // Lista
+            {
+                Console.WriteLine("Lista: " + vocalsUsingList[i]);
+            }
 
             #endregion
 
