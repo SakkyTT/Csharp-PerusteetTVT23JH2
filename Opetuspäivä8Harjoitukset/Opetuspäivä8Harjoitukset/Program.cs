@@ -160,7 +160,24 @@ namespace Opetuspäivä8Harjoitukset
 
             // Tee algoritmi, joka hakee taulukosta pienimmän arvon
 
+            double valueMin = 0; // Tästä arvosta lähdetään liikkeelle ja tallennetaan suurin arvo.
 
+            for (int i = 0; i < temperaturesArray.Length; i++)
+            {
+                // Korvataan oletusarvo 0, ensimmäisellä kierroksella
+                if (i == 0)
+                {
+                    valueMin = temperaturesArray[i];
+                }
+
+                // Onko uusi arvo pienempi kuin vanha arvo
+                if (temperaturesArray[i] < valueMin)
+                {
+                    valueMin = temperaturesArray[i]; // Otetaan talteen pienempi arvo
+                }
+            }
+
+            Console.WriteLine($"Listan pienin arvo on: {valueMin}");
 
             #endregion
 
