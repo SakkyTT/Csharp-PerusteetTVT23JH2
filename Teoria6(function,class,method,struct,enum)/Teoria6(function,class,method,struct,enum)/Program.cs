@@ -65,6 +65,7 @@ namespace Teoria6_function_class_method_struct_enum_
             // 2a. Contructor
             // 2b. Property
             // 2c. Metodi / Method
+            // TODO: value type vs reference type
 
             #endregion
 

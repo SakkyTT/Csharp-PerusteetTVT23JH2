@@ -55,14 +55,35 @@ namespace Opetuspäivä9Harjoitukset
             // C# Funktiot: Verolaskuri (Yhdessä päivä 9)
             // https://moodle.sakky.fi/mod/assign/view.php?id=1159678&forceview=1
             #region
-
             Console.Write("Syötä bruttopalkka: ");
             decimal grossSalary = decimal.Parse(Console.ReadLine());
 
             Console.Write("Syötä veroprosentti: ");
             decimal taxPercentage = decimal.Parse(Console.ReadLine());
 
-            Console.WriteLine($"Nettopalkka on: {netSalary(grossSalary, taxPercentage)}");
+            (decimal, decimal) netAndTax = netSalary(grossSalary, taxPercentage);
+
+            Console.WriteLine($"Nettopalkka on: {netAndTax.Item1} \r\nMaksettu vero on: {netAndTax.Item2}");
+
+            #endregion
+
+
+            // C# Funktiot: Kalorit jouleiksi
+            // https://moodle.sakky.fi/mod/assign/view.php?id=1159676
+            #region
+
+            // while, joka toistuvasti pyytää muunnoksia
+            // if, käyttäjä valitsee j => k tai k => j
+            // käyttäjän valinnan mukaan suoritetaan metodi
+
+            Console.Write("Syötä kalorit: ");
+            decimal calories = decimal.Parse(Console.ReadLine());
+
+            Console.Write("Syötä joulet: ");
+            decimal joules = decimal.Parse(Console.ReadLine());
+
+            Console.WriteLine($"k => j == {caloriesToJoules(calories)}");
+            Console.WriteLine($"j => k == {joulesToCalories(joules)}");
 
             #endregion
 
@@ -109,14 +130,32 @@ namespace Opetuspäivä9Harjoitukset
         // https://moodle.sakky.fi/mod/assign/view.php?id=1159678&forceview=1
         #region
         
-        private static decimal netSalary(decimal grossSalary, decimal taxPercentage)
+        // Nyt metodi palauttaa tuple datarakenteen, joka on pari decimal arvoja
+        private static (decimal, decimal) netSalary(decimal grossSalary, decimal taxPercentage)
         {
-            decimal result = 0;
+            (decimal, decimal) result = (0,0);
 
             // Tässä välissä lasketaan lopputulos
-            result = (grossSalary / 100) * (100 - taxPercentage);
+            result.Item1 = (grossSalary / 100) * (100 - taxPercentage);
+            result.Item2 = grossSalary - (grossSalary / 100) * (100 - taxPercentage);
 
             return result;
+        }
+
+        #endregion
+
+
+        // C# Funktiot: Kalorit jouleiksi
+        // https://moodle.sakky.fi/mod/assign/view.php?id=1159676
+        #region
+
+        private static decimal caloriesToJoules(decimal calories)
+        {
+            return calories * 4.184m;
+        }
+        private static decimal joulesToCalories(decimal joules)
+        {
+            return joules * 0.2390m;
         }
 
         #endregion
