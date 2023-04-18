@@ -60,6 +60,7 @@ namespace Teoria6_function_class_method_struct_enum_
 
 
             // 2. Luokka / Class
+            // TODO: luokan lisäämisen omaan tiedostoon
             #region
             // 2a. Contructor
             // 2b. Property

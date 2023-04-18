@@ -1,0 +1,7 @@
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspäivä9Harjoitukset\Opetuspäivä9Harjoitukset\bin\Debug\Opetuspäivä9Harjoitukset.exe.config
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspäivä9Harjoitukset\Opetuspäivä9Harjoitukset\bin\Debug\Opetuspäivä9Harjoitukset.exe
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspäivä9Harjoitukset\Opetuspäivä9Harjoitukset\bin\Debug\Opetuspäivä9Harjoitukset.pdb
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspäivä9Harjoitukset\Opetuspäivä9Harjoitukset\obj\Debug\Opetuspäivä9Harjoitukset.csproj.AssemblyReference.cache
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspäivä9Harjoitukset\Opetuspäivä9Harjoitukset\obj\Debug\Opetuspäivä9Harjoitukset.csproj.CoreCompileInputs.cache
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspäivä9Harjoitukset\Opetuspäivä9Harjoitukset\obj\Debug\Opetuspäivä9Harjoitukset.exe
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Opetuspäivä9Harjoitukset\Opetuspäivä9Harjoitukset\obj\Debug\Opetuspäivä9Harjoitukset.pdb
