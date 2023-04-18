@@ -10,6 +10,8 @@ namespace Opetuspäivä9Harjoitukset
     {
         static void Main(string[] args)
         {
+            // Lisää tähän tiedostoon uusi metodi, joka ottaa vastaan parametrinä taulukon
+            // int lukuja ja palauttaa taulukon keskiarvon.
         }
     }
 }

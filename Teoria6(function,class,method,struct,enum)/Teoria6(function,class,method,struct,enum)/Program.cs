@@ -47,7 +47,14 @@ namespace Teoria6_function_class_method_struct_enum_
 
             // Esim:
             Console.WriteLine(""); // Tämä on "Console"-luokan staattinen "WriteLine()"-metodi
-            
+            // Program.multiplyNumbers(2, 10); // Viittaus "Program" luokkaan ei ole pakollinen
+            // koska olemme sen luokan sisällä.
+            // metodi palauttaa arvon, se pitää ottaa talteen.
+            int fiveTimesThree = multiplyNumbers(5, 3);
+            // Tai käytetään palautettavaa arvoa suoraan toisessa metodissa.
+            // Nyt metodin "multiplyNumbers()" palautetta arvo toimii parametrinä
+            // metodille "WriteLine".
+            Console.WriteLine(multiplyNumbers(5, 3)); 
 
             #endregion
 
@@ -91,9 +98,14 @@ namespace Teoria6_function_class_method_struct_enum_
 
         // Luodaan staattinen metodi
         // avainsana "static" tulee näkyvyyden ja palautettavan datatyypin väliin.
-        public static int powerTwo (int number1, int number2)
+        // Tämä metodi ottaa vastaan kaksi int arvoa ja palauttaa niiden kerronnan tuloksen.
+        public static int multiplyNumbers (int number1, int number2)
         {
+            // public -näkyy luokan ulkopuolelle
+            // static -tekee metodista staattisen (voi käyttää ilman objektia)
+            // int - tämä metodi palauttaa int-arvon
 
+            return number1*number2; // Return avainsanalla palautetaan arvo.
         }
 
     } // Class Program
