@@ -1,0 +1,7 @@
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Teoria6(function,class,method,struct,enum)\Teoria6(function,class,method,struct,enum)\bin\Debug\Teoria6(function,class,method,struct,enum).exe.config
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Teoria6(function,class,method,struct,enum)\Teoria6(function,class,method,struct,enum)\bin\Debug\Teoria6(function,class,method,struct,enum).exe
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Teoria6(function,class,method,struct,enum)\Teoria6(function,class,method,struct,enum)\bin\Debug\Teoria6(function,class,method,struct,enum).pdb
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Teoria6(function,class,method,struct,enum)\Teoria6(function,class,method,struct,enum)\obj\Debug\Teoria6(function,class,method,struct,enum).csproj.AssemblyReference.cache
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Teoria6(function,class,method,struct,enum)\Teoria6(function,class,method,struct,enum)\obj\Debug\Teoria6(function,class,method,struct,enum).csproj.CoreCompileInputs.cache
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Teoria6(function,class,method,struct,enum)\Teoria6(function,class,method,struct,enum)\obj\Debug\Teoria6(function,class,method,struct,enum).exe
+C:\Users\teemu_turunen\Documents\GitHub\Csharp-PerusteetTVT23JH2\Teoria6(function,class,method,struct,enum)\Teoria6(function,class,method,struct,enum)\obj\Debug\Teoria6(function,class,method,struct,enum).pdb
