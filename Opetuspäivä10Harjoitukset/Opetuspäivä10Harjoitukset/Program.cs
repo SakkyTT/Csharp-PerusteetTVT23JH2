@@ -84,6 +84,9 @@ namespace Opetuspäivä10Harjoitukset
 
         #region
 
+
+
+
         // Parametrien yksiköt joko kommentoidaan tai lisätään parametrien nimiin.
         private static decimal carTripCostCalculator(decimal distanceInKilometers, decimal averageConsumption, decimal fuelCost)
         {
