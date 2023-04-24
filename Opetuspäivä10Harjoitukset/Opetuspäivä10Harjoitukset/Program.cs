@@ -15,23 +15,55 @@ namespace Opetuspäivä10Harjoitukset
 
             #region
 
-            Console.Write("Syötä ajettu matka(km): ");
-            decimal distance = decimal.Parse(Console.ReadLine());
+            bool userEndsLoop = false;
 
-            Console.Write("Syötä ajeneuvon keskikulutus(l/100km): ");
-            decimal averageConsumption = decimal.Parse(Console.ReadLine());
+            // List<(decimal, decimal, decimal)> test = new List<(decimal, decimal, decimal)>(); // Tuple
+            List<decimal> userDistances = new List<decimal>();
+            List<decimal> userAverageConsumption = new List<decimal>();
+            List<decimal> userFuelPrice = new List<decimal>();
+            // Kun käytetään useaa eri listaa tai taulua, täytyy hallita indeksien käyttö oikein eri listojen välillä.
 
-            Console.Write("Syötä polttoaineen hinta(€/l): ");
-            decimal fuelPrice = decimal.Parse(Console.ReadLine());
+            // Kohta 5, lisätään koko koodi silmukkaan
+            while (userEndsLoop == false)
+            {
+                Console.Write("Syötä ajettu matka(km): ");
+                //decimal distance = decimal.Parse(Console.ReadLine());
+                userDistances.Add(decimal.Parse(Console.ReadLine()));
 
-            decimal tripCost = carTripCostCalculator(distance, averageConsumption, fuelPrice);
+                Console.Write("Syötä ajeneuvon keskikulutus(l/100km): ");
+                decimal averageConsumption = decimal.Parse(Console.ReadLine());
+                userAverageConsumption.Add(averageConsumption);
 
-            Console.WriteLine(); // Tyhjä rivi
-            Console.WriteLine($"Ajetun matkan hinta on: {tripCost} euroa.");
+                Console.Write("Syötä polttoaineen hinta(€/l): ");
+                decimal fuelPrice = decimal.Parse(Console.ReadLine());
+                userFuelPrice.Add(fuelPrice);
+
+                //decimal tripCost = carTripCostCalculator(distance, averageConsumption, fuelPrice);
+
+                // Console.WriteLine(); // Tyhjä rivi
+                // Console.WriteLine($"Ajetun matkan hinta on: {tripCost} euroa.");
+                // Console.WriteLine(); // Tyhjä rivi
+
+                Console.Write("Calculate another trip? (y/n): ");
+                string input = Console.ReadLine();
+
+                if (input == "n") // Käyttäjä lopettaa sovelluksen
+                {
+                    userEndsLoop = true; // Kun tämä muuttuja on true, silmukka päättyy
+                }
+            }
+
+            // Käydään listat läpi ja tulostetaan matkojen hinnat.
+            for (int i = 0; i < userDistances.Count; i++)
+            {
+                Console.WriteLine($"Matkan {i+1} hinta on:" +
+                    $" {carTripCostCalculator(userDistances[i], userAverageConsumption[i], userFuelPrice[i])}");
+            }
 
             #endregion
 
-
+            Console.WriteLine();
+            Console.WriteLine("Press any key to exit..");
             Console.ReadKey();
         }
 
