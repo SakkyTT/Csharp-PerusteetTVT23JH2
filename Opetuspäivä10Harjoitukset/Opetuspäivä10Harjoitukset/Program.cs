@@ -74,6 +74,20 @@ namespace Opetuspäivä10Harjoitukset
 
             #endregion
 
+
+
+            // C# Funktiot: Pinta-alat ja tilavuudet (Yhdessä päivä 10)
+            // https://moodle.sakky.fi/mod/assign/view.php?id=1159681
+            #region
+
+            Square squareOne = new Square(5, 10);
+            Console.WriteLine($"Area of square one is: {squareOne.Area()}");
+            Console.WriteLine($"Circumference of square one is: {squareOne.Circumference()}");
+
+            Square squareTwo = new Square(1, 2);
+
+            #endregion
+
             Console.WriteLine();
             Console.WriteLine("Press any key to exit..");
             Console.ReadKey();
@@ -81,10 +95,7 @@ namespace Opetuspäivä10Harjoitukset
 
         // C# Funktiot: Bensankulutus
         // https://moodle.sakky.fi/mod/assign/view.php?id=1159675
-
         #region
-
-
 
 
         // Parametrien yksiköt joko kommentoidaan tai lisätään parametrien nimiin.
@@ -110,7 +121,35 @@ namespace Opetuspäivä10Harjoitukset
 
             return newArray;
         }
+#endregion
 
-        #endregion
+
+    }// Program päättyy
+
+    public class Square
+    {
+        // Properties
+        public double Width { get; set; }
+        public double Heigth { get; set; }
+
+        // Constructors
+        public Square(double width, double heigth)
+        {
+            Width = width;
+            Heigth = heigth;
+        }
+
+        // Methods
+
+        public double Area()// Huomioikaa, ei tarvitse parametrejä. Voi tosin olla parametrejä tarvittaessa.
+        {
+            return Width * Heigth; // Arvot löytyvät suoraan objektista.
+        }
+
+        public double Circumference()
+        {
+            return (Width * 2) + (Heigth * 2);
+        }
     }
+
 }
