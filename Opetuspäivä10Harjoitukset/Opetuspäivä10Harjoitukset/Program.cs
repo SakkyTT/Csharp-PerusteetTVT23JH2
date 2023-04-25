@@ -86,6 +86,10 @@ namespace Opetuspäivä10Harjoitukset
 
             Square squareTwo = new Square(1, 2);
 
+            Triangle triangleOne = new Triangle(2, 5);
+            Console.WriteLine($"Area of the triangle one is: {triangleOne.Area()}");
+            Console.WriteLine($"Perimeter of the triangle one is: {triangleOne.Perimeter()}");
+
             #endregion
 
             Console.WriteLine();
