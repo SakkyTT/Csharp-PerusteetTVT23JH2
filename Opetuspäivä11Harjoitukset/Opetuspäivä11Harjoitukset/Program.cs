@@ -11,6 +11,10 @@ namespace Opetuspäivä11Harjoitukset
     {
         static void Main(string[] args)
         {
+            Solution("testi", "ti");
+
+
+
             //
             //
 
@@ -62,6 +66,35 @@ namespace Opetuspäivä11Harjoitukset
 
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
+        }
+
+        public static bool Solution(string str, string ending)
+        {
+            // TODO: complete
+            //  01234    01
+            // "testi"  "ti" => true
+            // "testaus" "ta" => false
+
+            // Tutkitaan oikealta lähtien onko merkit samoja string arvojen välillä.
+
+            bool result = true; // Oletuksena ending on str arvon pääte.
+            int j = ending.Length - 1;
+            // 4, 2
+            // 6, 4
+            for (int i = str.Length - 1; i > (str.Length - 1) - ending.Length; i--)
+            {
+                //for(int j = ending.Length - 1; j >= 0; j--)
+                // {
+                if (str[i] != ending[j])
+                {
+                    // Jos merkit eivät ole samoja, otetaan tieto talteen.
+                    result = false;
+                }
+                j--;
+                //}
+            }
+
+            return result;
         }
     }
 }
