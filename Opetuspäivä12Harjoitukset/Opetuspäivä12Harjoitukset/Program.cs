@@ -18,6 +18,14 @@ namespace Opetuspäivä12Harjoitukset
             Console.WriteLine(Remove_char("testaus"));
 
 
+            // C# Funktiot: MeterConverter
+            // https://moodle.sakky.fi/mod/assign/view.php?id=1159680
+
+            Console.Write("Syötä mitta(m): ");  
+            double meters = double.Parse(Console.ReadLine());
+            Console.WriteLine($"{meters}m sentteinä on:{MeterConverter.ToCentimeter(meters)}");
+            Console.WriteLine($"{meters}m kilometreinä on:{MeterConverter.ToKilometer(meters)}");
+
             Console.WriteLine();
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
