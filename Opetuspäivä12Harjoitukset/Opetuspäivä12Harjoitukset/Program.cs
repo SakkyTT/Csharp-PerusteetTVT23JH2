@@ -26,6 +26,26 @@ namespace Opetuspäivä12Harjoitukset
             Console.WriteLine($"{meters}m sentteinä on:{MeterConverter.ToCentimeter(meters)}");
             Console.WriteLine($"{meters}m kilometreinä on:{MeterConverter.ToKilometer(meters)}");
 
+
+
+
+            LastDigit(1, 1);
+            LastDigit(123767, 4);
+            LastDigit(0, 1);
+            LastDigit(34625647867585, 10);
+            LastDigit(1234, 0);
+            LastDigit(24134, -4);
+            LastDigit(1343, 5);
+
+
+
+
+
+
+
+
+
+
             Console.WriteLine();
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
@@ -75,5 +95,49 @@ namespace Opetuspäivä12Harjoitukset
             return result;
         }
 
+
+        public static int[] LastDigit(long n, int d)
+        {
+            // Jos d on negatiivinen, palautetaan tyhjä taulukko
+            if (d < 0)
+            {
+                return new int[] { };
+            }
+
+            // n == 123456
+            // d == 4
+            // return == [3, 4, 5, 6]
+
+            // Ensin n -> ToString(), jotta voidaan käsitellä numeroita yksi
+            // kerrallaan. 123456 -> "123456"
+
+            string asText = n.ToString();
+
+            // Jos pyydetään enemmän numeroita kun luvussa on,
+            // Päivitetään parametrin d pituus
+            if (d > asText.Length)
+            {
+                d = asText.Length;
+            }
+
+
+            int[] result = new int[d];
+            // Aloitetaan taulukon viimeisestä indeksistä
+            int arrayIndex = result.Length - 1; 
+
+            // Kopioidaan uudesta string muuttujasta arvot lopusta alkua kohti
+            // Aloitetaan viimeisestä indeksistä
+            // ja suoritetaan d(parametri) kertaa
+            // Length == 6
+            // d == 4
+            // 6 - 4 == 2
+            for (int i = asText.Length-1; i >= asText.Length - d; i--)
+            {
+                result[arrayIndex] = int.Parse(asText[i].ToString());
+                arrayIndex--;
+            }
+
+            return result;
+        }
     }
 }
