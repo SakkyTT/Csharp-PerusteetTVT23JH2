@@ -17,13 +17,44 @@ namespace CardGame
             // Tässä on pelin kaikki kortit
             Deck deck = new Deck();
             // Tässä on pelaajan käsi
-            Deck playerDeck = new Deck();
+            Deck player1Deck = new Deck();
+            Deck player2Deck = new Deck();
 
             deck.GenerateCards();
             deck.Shuffle();
 
-            playerDeck.Cards.Add(deck.Draw());
-            playerDeck.Cards.Add(deck.Draw());
+            // Lisää sovellukseen toinen pelaaja
+            // Nosta molemmille pelaajille kortit
+            player1Deck.Cards.Add(deck.Draw());
+            player2Deck.Cards.Add(deck.Draw());
+
+            // Ilmoita kumpi voitti
+            if (player1Deck.Cards[0].Value > player2Deck.Cards[0].Value)
+            {
+                Console.WriteLine("Pelaaja yksi voitti!");
+            }
+            else if (player1Deck.Cards[0].Value < player2Deck.Cards[0].Value)
+            {
+                Console.WriteLine("Pelaaja kaksi voitti!");
+            }
+            else // jos sama arvo, verrataan maat
+            {
+                if (player1Deck.Cards[0].Suite < player2Deck.Cards[0].Suite)
+                {
+                    Console.WriteLine("Pelaaja yksi voitti!");
+                }
+                else
+                {
+                    Console.WriteLine("Pelaaja kaksi voitti!");
+                }
+            }
+
+            // Isompi arvo voittaa
+            // Ässä == 1
+            // Tasapelissä seuraavasti
+            // Hearts > Diamonds > Clubs > Spades
+
+
 
             Console.ReadKey();
         }
