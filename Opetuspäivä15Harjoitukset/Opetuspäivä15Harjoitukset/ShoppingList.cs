@@ -32,6 +32,13 @@ namespace Opetuspäivä15Harjoitukset
             Sum += temp.Price;
         }
 
+        public void PrintProduct()
+        {
+            for (int i = 0; i < Products.Count; i++)
+            {
+                Console.WriteLine($"{i+1}. {Products[i].Name}\t\t\t{Products[i].Price}");
+            }
+        }
 
     }
 }

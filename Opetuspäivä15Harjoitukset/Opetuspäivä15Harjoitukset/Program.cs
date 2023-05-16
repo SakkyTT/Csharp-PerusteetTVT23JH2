@@ -10,7 +10,13 @@ namespace Opetuspäivä15Harjoitukset
     {
         static void Main(string[] args)
         {
-            //List<ShoppingList> order = new List<ShoppingList>();
+            //List<ShoppingList> orders = new List<ShoppingList>();
+            //orders[1].AddProduct();
+
+            // 15,12345  || * 100
+            // 1512,234  || truncate, joka poistaa desimaali arvot
+            // 1512      || / 100
+            // 15,12
 
             Console.Write("Mihin kauppaan tehdään ostoslista: ");
             string shop = Console.ReadLine();
@@ -33,8 +39,9 @@ namespace Opetuspäivä15Harjoitukset
                 // 1. ShoppingList.GetProducts(); <- palauttaa listan tuotteista ja
                 //                                   se käydään läpi täällä.
                 // 2. ShoppingList.PrintProducts(); <- Tulostaa tuotteen consoliin suoraan.
-               
+                newOrder.PrintProduct();
 
+                Console.WriteLine();
                 Console.Write("Syötä tuote ja lukumäärä(maito, 3): ");
                 string input = Console.ReadLine();
                 if (input != "") // Tallennetaan tuote, jos käyttäjä on syöttänyt jotakin
@@ -54,9 +61,12 @@ namespace Opetuspäivä15Harjoitukset
                     userExitsProductsLoop = true;
                 }
 
-            } while (userExitsProductsLoop != true); // TODO this condition
+            } while (userExitsProductsLoop != true);
 
+            // Näytetään summa käyttäjälle
 
+            Console.WriteLine();
+            Console.WriteLine($"Ostoksien summa: {newOrder.Sum}");
 
 
 
